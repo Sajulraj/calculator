@@ -10,6 +10,9 @@ import { FormsModule} from '@angular/forms';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { PrimenumbersComponent } from './primenumbers/primenumbers.component';
 import { NavComponent } from './nav/nav.component';
+import { FactorialComponent } from './factorial/factorial.component';
+import { DivisionComponent } from './division/division.component';
+import { SigninComponent } from './signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { NavComponent } from './nav/nav.component';
     SubstractionComponent,
     MultiplicationComponent,
     PrimenumbersComponent,
-    NavComponent
+    NavComponent,
+    FactorialComponent,
+    DivisionComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

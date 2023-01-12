@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { CalcService } from '../services/calc.service';
 
 @Component({
-  selector: 'app-multiplication',
-  templateUrl: './multiplication.component.html',
-  styleUrls: ['./multiplication.component.css']
+  selector: 'app-division',
+  templateUrl: './division.component.html',
+  styleUrls: ['./division.component.css']
 })
-export class MultiplicationComponent {
+export class DivisionComponent {
   result=0
   constructor(private service:CalcService){}
   num1:number=0
@@ -16,6 +16,7 @@ export class MultiplicationComponent {
       "num1":this.num1,
       "num2":this.num2
     }
-    this.service.performMultiplication(data).then(res=>res.json()).then(data=>this.result=data.Result)
+    this.service.performDivision(data).then(res=>res.json()).then(data=>this.result=data.Result)
   }
 }
+

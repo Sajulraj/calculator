@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 mt-2">
+           <div class="mb-3 " style="text-align: center;">Factorial</div>
+            <div class="mb-3">
+                <input type="text" placeholder="enter first number" [(ngModel)]="num" class="form-control">
+            </div>
+           
+            <div class="bt-3">
+                <button type="submit" class="btn btn-outline-danger" (click)="factnumber()">fact</button>
+            </div>
+        </div>
+        <div class="col-2">
+            Output={{result}}
+        </div>
+    </div>
+</div>
+
