@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        
+        <div class="col-8">
+            <h2 style="text-align: center; ">ADDITION</h2>
+            <div class="mb-3">
+                <!-- template variable #variablename -->
+                <input type="text" class="form-control" #inpt1 placeholder="enter first number">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" #inpt2 placeholder="enter second number">
+            </div>
+            <div class="b-3">
+                <!-- event binding (event) -->
+                <button class="btn btn-outline-info" (click)="addnumbers(inpt1,inpt2)" >Add</button>
+            </div>
+        </div>
+        <div class="col-2 mb-5 mt-5" style="text-decoration: solid;">
+            output={{result}}
+        </div>
+    </div>
+</div>
